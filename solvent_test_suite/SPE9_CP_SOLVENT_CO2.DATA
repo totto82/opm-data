@@ -288,9 +288,7 @@ SGFN
 SWFN
 -- Column 1: water saturation
 -- Column 2: water relative permeability
--- Column 3: oil relative permeability when only oil and water are present
--- Column 4: corresponding water-oil capillary pressure (psi) 
-
+-- Column 3: corresponding water-oil capillary pressure (psi) 
 -- These values are taken from Killough's dataset:
 0.151090     0.0     400.0
 0.151230     0.0     359.190
@@ -409,6 +407,10 @@ RSVD
 SUMMARY
 
 
+FNPR
+
+FNIR
+
 -- Killough's figure 7:
 FGOR
 -- Killough's figure 8:
@@ -464,10 +466,23 @@ WWPR
 WWPT
 /
 
+WNPR
+/
+
+WNIR
+/
+
+WNPT
+/
+
+WNIT
+/
+
+
 SCHEDULE
 
---RPTRST
---	'BASIC=2' /
+RPTRST
+ 'BASIC=2' /
 
 RPTSCHED
  WELLS=2 /

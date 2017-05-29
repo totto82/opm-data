@@ -189,7 +189,8 @@ SSFN
 -- is more than 0.01 
 MISC
  0.0 0.0
- 0.01 1.0
+ 0.01 0.0
+ 0.1 1.0
  1.0 1.0 /
 
 -- Use a linear ramp from 1500 to 3200 psia
@@ -391,6 +392,18 @@ WWPT
   'INJW'
   'INJG'
   'PROD'
+/
+
+WNPR
+/
+
+WNIR
+/
+
+WNPT
+/
+
+WNIT
 /
 
 SCHEDULE

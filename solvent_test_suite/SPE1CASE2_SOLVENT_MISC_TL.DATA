@@ -194,7 +194,7 @@ SGFN
 SOF3
 --  SOIL     KROW     KROG
     0        0        0
-    0.03     0	      0 	
+    0.03     0        0	
     0.18     0        0
     0.28     0.0001   0.0001
     0.38     0.001    0.001
@@ -339,7 +339,7 @@ PVTO
 -- for saturated oil and that the FVF is 1.579 at GOR=1.27 for undersaturated oil,
 -- so it is possible to use the assumption described above. 
 -- An equivalent approximation for the viscosity has been used.
-/
+
 
 SOLUTION
 -- -------------------------------------------------------------------------
@@ -386,6 +386,10 @@ WGOR
 /
 -- Using FGOR instead of WGOR:PROD results in the same graph
 FGOR
+
+FNPR
+
+FNIR
 
 -- 2a) Pressures of the cell where the injector and producer are located
 BPR
@@ -466,6 +470,18 @@ WWPR
 WWPT
   'INJ'
   'PROD'
+/
+
+WNPR
+/
+
+WNIR
+/
+
+WNPT
+/
+
+WNIT
 /
 
 SCHEDULE

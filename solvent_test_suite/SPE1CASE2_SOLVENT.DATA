@@ -344,6 +344,10 @@ WGOR
 -- Using FGOR instead of WGOR:PROD results in the same graph
 FGOR
 
+FNPR
+
+FNIR
+
 -- 2a) Pressures of the cell where the injector and producer are located
 BPR
 1  1  1 /
@@ -423,6 +427,18 @@ WWPR
 WWPT
   'INJ'
   'PROD'
+/
+
+WNPR
+/
+
+WNIR
+/
+
+WNPT
+/
+
+WNIT
 /
 
 SCHEDULE

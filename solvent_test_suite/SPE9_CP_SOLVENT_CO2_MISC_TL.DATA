@@ -268,8 +268,7 @@ PVDS
 SGFN
 -- Column 1: gas saturation
 -- Column 2: gas relative permeability
--- Column 3: oil relative permeability when oil, gas and connate water are present
--- Column 4: corresponding oil-gas capillary pressure (psi)
+-- Column 2: corresponding oil-gas capillary pressure (psi)
 
 -- Using values from table 3 in Killough's paper:
 0  	  0	     0
@@ -454,11 +453,11 @@ RSVD
 --   Since there is no free gas initially present, the gas-oil
 --   contact should lie above the reservoir, which it does (EQUIL, item 5)
 
---RPTSOL
--- RESTART=1 SGAS SOIL SWAT /
- 
 SUMMARY
 
+FNPR
+
+FNIR
 
 -- Killough's figure 7:
 FGOR
@@ -515,10 +514,23 @@ WWPR
 WWPT
 /
 
+WNPR
+/
+
+WNIR
+/
+
+WNPT
+/
+
+WNIT
+/
+
+
 SCHEDULE
 
---RPTRST
---	'BASIC=2' /
+RPTRST
+	'BASIC=2' /
 
 RPTSCHED
  WELLS=2 /
