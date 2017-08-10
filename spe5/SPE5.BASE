@@ -395,6 +395,21 @@ WWPT
   'PROD'
 /
 
+WGOR
+  'INJW'
+  'INJG'
+  'PROD'
+/
+
+WWCT
+  'INJW'
+  'INJG'
+  'PROD'
+/
+
+FPR
+/
+
 SCHEDULE
 -- -------------------------------------------------------------------------
 RPTSCHED
